@@ -1,0 +1,77 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400);
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+div.container {
+    position: absolute;
+    height: 100%;
+}
+
+div.container div {
+    position: relative;
+    top: 38%;
+    left:20%;
+}
+
+.effect a {
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 300;
+    text-shadow: 0 0 1px rgba(255,255,255,0.3);
+    font-size:25px;
+}
+
+.effect a {
+    color: black;
+    text-shadow: none;
+}
+
+.effect a::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    max-width: 0;
+    content: attr(data-hover);
+    -webkit-transition: max-width 0.5s;
+    -moz-transition: max-width 0.5s;
+    transition: max-width 0.5s;
+}
+
+.instagram a::before {
+    border-bottom: 1px solid #517fa4;
+    color: #517fa4;
+}
+
+.flickr a::before {
+    border-bottom: 1px solid #ff0084;
+    color: #ff0084;
+}
+
+.twitter a::before {
+    border-bottom: 1px solid #00aced;
+    color: #00aced;
+}
+
+.mail a::before {
+    border-bottom: 1px solid red;
+    color: red;
+}
+
+.github a::before {
+    border-bottom: 1px solid #333;
+    color: #333;
+}
+
+.linkedin a::before {
+    border-bottom: 1px solid #007bb6;
+    color: #007bb6;
+}
+
+.effect a:hover::before,
+.effect a:focus::before {
+    max-width: 100%;
+}
