@@ -71,6 +71,21 @@ div.container div {
     color: #007bb6;
 }
 
+.px a::before {
+    border-bottom: 1px solid #0099e5;
+    color: #0099e5;
+}
+
+.unsplash a::before {
+    border-bottom: 1px solid black;
+    color: black;
+}
+
+.tookapic a::before {
+    border-bottom: 1px solid red;
+    color: red;
+}
+
 .effect a:hover::before,
 .effect a:focus::before {
     max-width: 100%;
